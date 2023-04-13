@@ -1,8 +1,25 @@
 # Name: Donghyun Kim
 # SBUID: 115338001
-
+##################### SCORE ######################
+####### Score:  0/10
+#################################################
 # Remove the ellipses (...) when writing your solutions.
-
+# you output: no valid output
+# (base) D:\CSE 101 Ass1\Assignment 1 - Functions and Arithmetic-04-05-2023-05-19-27>D:/anaconda/python.exe "d:/CSE 101 Ass1/Assignment 1 - Functions and Arithmetic-04-05-2023-05-19-27/troykim12/Homework_1.py"
+# Put today's temperature in fahrenheit44
+# Put your x1 -4
+# Put your y1 -4
+# Put your x2 -5
+# Put your y2 5
+# Put your x3 3
+# Put your y3 -3
+# Put your degree you want to calculate!23
+# How many sides of a polygon?5
+# How long is the length of a polygon?4
+# Traceback (most recent call last):
+#   File "d:\CSE 101 Ass1\Assignment 1 - Functions and Arithmetic-04-05-2023-05-19-27\troykim12\Homework_1.py", line 117, in <module>
+#     print("The area of the triangle is : " + str(area) + " , its perimeter is : " + str(perimeter) )
+# NameError: name 'area' is not defined
 # ---------------------------- Exercise I ---------------------------------------
 # ----------------- Convert Fahrenheit to Celsius -------------------------------
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
