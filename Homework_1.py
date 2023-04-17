@@ -1,7 +1,7 @@
 # Name: Donghyun Kim
 # SBUID: 115338001
 ##################### SCORE ######################
-####### Score:  0/10 
+####### Score:  6/10 
 
 #################################################
 # Remove the ellipses (...) when writing your solutions.
