@@ -49,7 +49,7 @@ def what_to_wear(celsius):
     else:
         print("Please, wear a t-shirt")
 # This is a void function
-
+what_to_wear(fahrenheit2celsius(fahrenheit))
 # ---------------------------- Exercise II --------------------------------------
 # ----------------- Area and perimeter of a triangle  ---------------------------
 # TODO: Fill the functions shoelace_triangle_area, euclidean_distance and
@@ -67,14 +67,12 @@ def shoelace_triangle_area(x1, y1, x2, y2, x3, y3):
 
     return area
 
-d1 = 0
-d2 = 0
-d3 = 0
+
 
 def euclidean_distance(x1, y1, x2, y2):
-    global d1
-    global d2
-    global d3
+    d1 = 0
+    d2 = 0
+    d3 = 0
     d1 = ((x2-x1)**2 + (y2-y1)**2)**0.5
     d2 = ((x3-x2)**2 + (y3-y2)**2)**0.5
     d3 = ((x1-x3)**2 + (y1-y3)**2)**0.5
@@ -82,14 +80,16 @@ def euclidean_distance(x1, y1, x2, y2):
     return d1, d2,d3
 
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
-    d1 = ((x2-x1)**2 + (y2-y1)**2)**0.5
-    d2 = ((x3-x2)**2 + (y3-y2)**2)**0.5
-    d3 = ((x1-x3)**2 + (y1-y3)**2)**0.5
+    d1 = euclidean_distance(x1, y1, x2, y2, x3, y3)[0]
+    d2 = euclidean_distance(x1, y1, x2, y2, x3, y3)[1]
+    d3 = euclidean_distance(x1, y1, x2, y2, x3, y3)[2]
+   
 
     P = d1 + d2 + d3
 
     return P
-
+print(shoelace_triangle_area(x1, y1, x2, y2, x3, y3))
+print(compute_triangle_perimeter(x1, y1, x2, y2, x3, y3))
 
 
 # ---------------------------- Exercise III -------------------------------------
@@ -117,7 +117,10 @@ def polygon_area(number_sides, length_side):
     polygon_area = (number_sides*length_side*apothem(number_sides, length_side))/2
 
     return polygon_area
-   
+print(deg2rad(deg))
+print(apothem(number_sides, length_side))
+print(polygon_area(number_sides, length_side))
+
 
 
 # ---------------------------- Test -------------------------------------
